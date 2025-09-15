@@ -206,25 +206,33 @@ The main screen is your central hub for daily operations.
 -   **New Attendee**
 <img src="Assets/Images/screenshot06.png" alt="New Attendee" width="600"/>
 
+
     Register first-time visitors or new members.
     -   **How to use:** Enter the person's first and last name and assign a role (e.g., "Visitor").
     -   **Register & Check In:** Saves their profile, logs attendance for today, and prints a name tag.
     -   **Register Only:** Saves their profile for the future without checking them in.
 
+
 -   **Edit Profile**
 <img src="Assets/Images/screenshot05.png" alt="Edit Profile" width="600"/>
 
+
     Modify information for any existing profile via the top navigation bar.
+
 
 -   **Printer Connection**
 <img src="Assets/Images/screenshot03.png" alt="Printer Connection" width="600"/>
 
+
     This button on the home screen shows connection status (🔴/🟢) and is a shortcut to the printer selection dialog.
+
 
 -   **Connect / Re-Scan**
 <img src="Assets/Images/screenshot02.png" alt="Connect / Re-Scan" width="600"/>
 
+
     Forces CAMS to re-scan the network for other instances, which is useful if a connection was lost or another computer joins late.
+
 
 -   **Go Offline**
     Disconnects the CAMS instance from the network sync to run in a standalone mode.
@@ -232,7 +240,9 @@ The main screen is your central hub for daily operations.
 #### Admin Dashboard
 The control center for all CAMS settings and reports.
 
+
 <img src="Assets/Images/screenshot07.png" alt="Admin Dashboard" width="600"/>
+
 
 -   **Printer Settings Tab:** Configure your label printer, scan for devices, and print test pages.
 -   **Branding Tab:** Customize the welcome banner text and application logo.
