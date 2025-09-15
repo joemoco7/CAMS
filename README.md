@@ -195,46 +195,46 @@ Click the dropdown below for a complete guide on all of CAMS's features.
 #### Main Screen Functions
 The main screen is your central hub for daily operations.
 
--   **Returnee Check-In**
+1.   **Returnee Check-In**
 <img src="Assets/Images/screenshot04.png" alt="Returnee Check-In" width="600"/>
 
-    This screen is for logging attendance for anyone previously registered.
+   This screen is for logging attendance for anyone previously registered.
     -   **How to use:** Start typing a name in the search bar. The list will filter, and the top results will appear as large Quick Select buttons. Click a name and confirm to check them in. An attendance record is created, and a name tag is printed.
     -   **Signed-In List:** The list on the right shows everyone currently checked in.
     -   **Removing a Check-in:** Select a name from the "Currently Checked In" list and click **Remove Check-in**.
 
--   **New Attendee**
+2.   **New Attendee**
 <img src="Assets/Images/screenshot06.png" alt="New Attendee" width="600"/>
 
 
-    Register first-time visitors or new members.
+   Register first-time visitors or new members.
     -   **How to use:** Enter the person's first and last name and assign a role (e.g., "Visitor").
     -   **Register & Check In:** Saves their profile, logs attendance for today, and prints a name tag.
     -   **Register Only:** Saves their profile for the future without checking them in.
 
 
--   **Edit Profile**
+3.   **Edit Profile**
 <img src="Assets/Images/screenshot05.png" alt="Edit Profile" width="600"/>
 
 
-    Modify information for any existing profile via the top navigation bar.
+   Modify information for any existing profile via the top navigation bar.
 
 
--   **Printer Connection**
+4.   **Printer Connection**
 <img src="Assets/Images/screenshot03.png" alt="Printer Connection" width="600"/>
 
 
-    This button on the home screen shows connection status (🔴/🟢) and is a shortcut to the printer selection dialog.
+   This button on the home screen shows connection status (🔴/🟢) and is a shortcut to the printer selection dialog.
 
 
--   **Connect / Re-Scan**
+5.   **Connect / Re-Scan**
 <img src="Assets/Images/screenshot02.png" alt="Connect / Re-Scan" width="600"/>
 
 
     Forces CAMS to re-scan the network for other instances, which is useful if a connection was lost or another computer joins late.
 
 
--   **Go Offline**
+6.   **Go Offline**
     Disconnects the CAMS instance from the network sync to run in a standalone mode.
 
 #### Admin Dashboard
