@@ -1,0 +1,10 @@
+PySide6
+pyusb
+matplotlib
+Pillow
+brother-ql-next
+schedule
+requests
+flask
+zeroconf
+pandas
