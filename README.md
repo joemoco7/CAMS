@@ -1,325 +1,254 @@
-<img src="Assets/Images/CAMS-Logo.png" alt="CAMS" width="300"/>
+<div align="center">
+  <img src="Assets/Images/CAMS-Logo.png" alt="CAMS Logo" width="300"/>
 
-**Church Attendance Management System**
+  # CAMS: Church Attendance Management System
 
-A user-friendly, free, and open-source tool to simplify attendance management and event check-ins for organizations like churches.
+  A user-friendly, free, and open-source tool to simplify attendance management, event check-ins, and name tag printing for organizations like churches.
+
+  <!-- Badges -->
+  <p>
+    <img src="https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white" alt="Python 3.8+">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT">
+    <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-lightgrey.svg" alt="Platform: Linux | Windows">
+    <img src="https://img.shields.io/badge/Status-Active-brightgreen" alt="Status: Active">
+  </p>
+</div>
 
 ![Home Screen Screenshot](Assets/Images/screenshot01.png)
 
-**About The Project**
+---
 
-CAMS was created to provide a simple, no-cost solution for churches and other small organizations to track attendance for their services and events. CAMS focuses on the core needs of tracking who attended and when, as well as printing name tags to help foster a welcoming environment.
-Key Features
+## 📖 Table of Contents
 
-- Attendance Tracking: Easily record attendance for different events over time.
+- [About The Project](#-about-the-project)
+- [✨ Key Features](#-key-features)
+- [🚀 Getting Started](#-getting-started)
+  - [Platform Support](#platform-support)
+  - [Prerequisites](#prerequisites)
+  - [Installation (Linux)](#installation-linux)
+- [💻 Usage](#-usage)
+  - [Recommended: Desktop Shortcuts](#recommended-desktop-shortcuts)
+  - [Alternative: From the Terminal](#alternative-from-the-terminal)
+- [📚 User Guide](#-user-guide)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
 
-- Name Tag Printing: Quickly print name tags for attendees, guests, and children.
+---
 
-- Automated Setup: An installer script to check for dependencies and set up the program's environment.
+## 🏛️ About The Project
 
-- Cross-Platform (with caveats): Primarily built for Linux, but can run on Windows for users of Brother QL-series label printers.
+CAMS was created to provide a simple, no-cost solution for churches and other small organizations to track attendance for their services and events. It focuses on the core needs of tracking who attended and when, while also printing name tags to help foster a welcoming, close-knit community environment.
 
-- Customizable: Easily configure the program with your own organization's logo.
+---
 
-**Getting Started**
+## ✨ Key Features
+
+- **✅ Simple Attendance Tracking**: Easily record attendance for any event and view stats over time.
+- **📇 Instant Name Tag Printing**: Automatically print name tags for attendees, guests, and children upon check-in.
+- **🔄 Network Syncing**: Run CAMS on multiple computers on the same network and see all check-ins sync in real-time.
+- **⚙️ Guided Setup**: An installer script checks for dependencies and sets up the program's environment for you.
+- **🎨 Customizable**: Easily configure the program with your own organization's logo and welcome message.
+- **🐧 Cross-Platform**: Primarily built for Linux, but also runs on Windows with support for Brother QL-series label printers.
+
+---
+
+## 🚀 Getting Started
 
 This guide will walk you through setting up and running CAMS on your local machine.
-Platform Support
 
-This project is developed primarily for Debian-based Linux distributions (like Ubuntu), but can be run on Windows with a notable limitation.
-Operating System	Support Level	Printing Note
-Ubuntu / Debian:	Full	Fully supported. Uses the system's CUPS printing service.
-Windows:	Partial	The application runs, but printing is only supported for Brother QL-series label printers due to the brother-ql-next library.
-Prerequisites
+### Platform Support
 
-- Linux (Ubuntu/Debian):
-  Python 3 (e.g., python3.8 or newer)
-  The python3-venv and python3-pip packages. You can install them with:
-            
-        sudo apt update && sudo apt install python3-venv python3-pip
+This project is developed primarily for Debian-based Linux distributions but can be run on Windows with a notable printing limitation.
 
-- Windows:
-  Python 3 installed from python.org. Ensure you check the box "Add Python to PATH" during installation.
+| Operating System   | Support Level | Printing Note                                                   |
+| ------------------ | ------------- | --------------------------------------------------------------- |
+| **Ubuntu / Debian**| ✅ Full       | Fully supported. Uses the system's CUPS printing service.       |
+| **Windows**        | ⚠️ Partial    | The application runs, but printing is only supported for Brother QL-series label printers. |
 
-**Installation** (Linux)
+### Prerequisites
+
+- **Linux (Ubuntu/Debian):**
+  - Python 3.8 or newer.
+  - The `python3-venv` and `python3-pip` packages. Install them with:
+    ```bash
+    sudo apt update && sudo apt install python3-venv python3-pip
+    ```
+
+- **Windows:**
+  - [Python 3](https://www.python.org/downloads/) installed from python.org.
+  - > **IMPORTANT:** During installation, ensure you check the box that says **"Add Python to PATH"**.
+
+### Installation (Linux)
 
 The installation process is handled by a guided script.
 
-1.) Clone the repository:
-Open your terminal and clone this project to your machine.
-  
-        git clone https://github.com/joemoco7/CAMS.git
+1.  **Clone the Repository**
+    Open your terminal and clone this project to your machine.
+    ```bash
+    git clone https://github.com/joemoco7/CAMS.git
+    ```
+    (Or, you can download the ZIP and extract it).
 
-  
+2.  **Navigate to the Directory**
+    ```bash
+    cd CAMS
+    ```
 
-  - (Or, you can download the ZIP and extract it).
+3.  **Run the Installer Script**
+    This script will check for system libraries, create a Python virtual environment (`venv`), and install all required packages.
+    ```bash
+    python3 CAMS_Installer.py
+    ```
+    > **Note:** If any system dependencies are missing, the script will notify you and provide the `sudo apt install ...` command to run.
+    >
+    > **Warning:** Do not run this installer script with `sudo`.
 
-2.) Navigate to the directory:
+Once the script finishes, your environment is ready!
 
-        cd CAMS
+---
 
-3.) Run the Installer Script:
-This script will check for system libraries, create a Python virtual environment (venv), and install all required packages. 
-
-        python3 CAMS_Installer.py
-  
-  *   If any system dependencies are missing, the script will notify you and provide the `sudo apt install ...` command to run.
-  *   **Important:** Do not run this script with `sudo`.
-
-Once the script finishes, your environment is ready.
-
-**Running After Installation**
+## 💻 Usage
 
 After a successful installation, you can run the application using the provided shortcut files. This is the recommended method for daily use.
-Recommended Launch Method: Desktop Shortcuts
 
-**- For Linux Users (.desktop file) -**
+### Recommended: Desktop Shortcuts
 
-The "Start CAMS.desktop" file is a standard Linux shortcut that will add CAMS to your system's application menu. You must edit this file before it will work.
-  Open the Shortcut File: Navigate to the CAMS project folder and open "Start CAMS.desktop" in a text editor.
+#### For Linux Users (`.desktop` file)
 
-  Update the Path: Find the line that starts with Path=. You must replace the example path (/home/acer/Church_Attendance_Management_System/) with the full, absolute path to the CAMS folder on your computer.
+The `Start CAMS.desktop` file is a standard Linux shortcut. You must edit this file with the correct paths before it will work.
 
-        Before: Path=/home/acer/Church_Attendance_Management_System/
+1.  **Open the Shortcut File:** Navigate to the CAMS folder and open `Start CAMS.desktop` in a text editor.
 
-        After (Example): Path=/home/your_username/Documents/CAMS/
+2.  **Update the Paths:** You must replace the example paths with the **full, absolute path** to the CAMS folder on your computer.
 
-  Update the Icon (Optional but Recommended): Find the line that starts with Icon=. You can point this to the logo included in the project or any other icon file you prefer. Again, you must use the full, absolute path.
+    -   Find the line `Path=`.
+        -   *Before:* `Path=/home/acer/Church_Attendance_Management_System/`
+        -   *After (Example):* `Path=/home/your_username/Documents/CAMS/`
 
-        Before: Icon=/home/acer/.local/share/applications/CAMS-icon.png
+    -   Find the line `Icon=`.
+        -   *Before:* `Icon=/home/acer/.local/share/applications/CAMS-icon.png`
+        -   *After (Example):* `Icon=/home/your_username/Documents/CAMS/Assets/Images/CAMS-Logo.png`
 
-        After (Example): Icon=/home/your_username/Documents/CAMS/assets/images/logo.png
+3.  **Install the Shortcut:** Save the file. Now, copy it to your local applications directory using the terminal:
+    ```bash
+    # Run this command from inside the CAMS project folder
+    cp "Start CAMS.desktop" ~/.local/share/applications/
+    ```
+    After this, "CAMS" should appear in your application launcher (you may need to log out and back in).
 
-  Install the Shortcut: Save your changes to the file. Now, copy the edited file to your local applications directory using the terminal:
+#### For Windows Users (`.bat` file)
 
-  - You can use this when stating from inside the CAMS project folder
-    
-        cp "Start CAMS.desktop" ~/.local/share/applications/
+The `Start CAMS.bat` file is designed to work without any modification.
+1.  Navigate to the CAMS folder in File Explorer.
+2.  Double-click the `Start CAMS.bat` file.
 
-      
+A command prompt window will appear, and the application will launch. This window helps you see error messages if the program closes unexpectedly.
 
-After these steps, "CAMS" should appear in your application launcher (you may need to log out and back in for it to show up).
+### Alternative: From the Terminal
 
-    - Note for non-GNOME users: This shortcut uses gnome-terminal to launch the script. If you are using a different desktop environment (like KDE Plasma or XFCE), you may need to change gnome-terminal -- bash -c '...' to the equivalent for your system's terminal (e.g., konsole -e bash -c '...').
+This method is useful for debugging or if you prefer the command line.
 
-**- For Windows Users (.bat file) -**
+1.  Open a terminal (Linux) or Command Prompt/PowerShell (Windows).
+2.  Navigate to the CAMS project directory:
+    ```bash
+    cd /path/to/your/CAMS/folder
+    ```
+3.  Run the launcher script directly:
+    - **On Linux:**
+      ```bash
+      python3 CAMS_Launch.py
+      ```
+    - **On Windows:**
+      ```bash
+      python CAMS_Launch.py
+      ```
 
-The "Start CAMS.bat" file is designed to work without any modification.
+---
 
-  Simply navigate to the CAMS folder in File Explorer.
+## 📚 User Guide
 
-  Double-click the "Start CAMS.bat" file.
+Click the dropdown below for a complete guide on all of CAMS's features.
 
-A command prompt window will appear, and the CAMS application will launch. The window will remain open after you close the application; you can press any key to dismiss it. This is intentional, as it allows you to see any error messages if the program closes unexpectedly.
+<details>
+<summary><strong>Expand Full User Guide...</strong></summary>
 
-**- Alternative Method: Running from the Terminal -**
+### Quick Start Guide
 
-This method is useful for debugging or if you prefer using the command line.
+1.  **Launch the Application:** Start CAMS on one or more computers.
+2.  **Network Connection:** Ensure all computers are on the same local network (e.g., same Wi-Fi). The first instance becomes the "Server," and others will connect to it automatically.
+3.  **Connect a Printer:**
+    - On the main screen, click the **🔴 Printer Connection** button.
+    - Select an "Available" printer from the list.
+    - The button will turn green (**🟢 Printer Connection**) when connected.
+4.  **Add Your Branding (Optional):**
+    - Go to **Admin Dashboard** → **Branding** tab.
+    - Update the `Welcome Banner Text` and provide a path to your church's logo.
+    - Click **Save Branding Settings**.
+5.  **Start Checking People In!**
+    - **Returnee Check-in:** For anyone who has attended before.
+    - **New Attendee:** To register first-time visitors.
 
-  Open a terminal (Linux) or Command Prompt/PowerShell (Windows).
+---
 
-  Navigate to the CAMS project directory.
+### In-Depth Feature Guide
 
-    
-      cd /path/to/your/CAMS/folder
+#### Main Screen Functions
+The main screen is your central hub for daily operations.
 
-  
+-   **Returnee Check-In**
+    This screen is for logging attendance for anyone previously registered.
+    -   **How to use:** Start typing a name in the search bar. The list will filter, and the top results will appear as large Quick Select buttons. Click a name and confirm to check them in. An attendance record is created, and a name tag is printed.
+    -   **Signed-In List:** The list on the right shows everyone currently checked in.
+    -   **Removing a Check-in:** Select a name from the "Currently Checked In" list and click **Remove Check-in**.
 
-Run the launcher script directly:
+-   **New Attendee**
+    Register first-time visitors or new members.
+    -   **How to use:** Enter the person's first and last name and assign a role (e.g., "Visitor").
+    -   **Register & Check In:** Saves their profile, logs attendance for today, and prints a name tag.
+    -   **Register Only:** Saves their profile for the future without checking them in.
 
-  On Linux:
-  
-    python3 CAMS_Launch.py
+-   **Edit Profile**
+    Modify information for any existing profile via the top navigation bar.
 
-  On Windows:
-  
-    python CAMS_Launch.py
+-   **Printer Connection**
+    This button on the home screen shows connection status (🔴/🟢) and is a shortcut to the printer selection dialog.
 
-**Quick Start Guide**
+-   **Connect / Re-Scan**
+    Forces CAMS to re-scan the network for other instances, which is useful if a connection was lost or another computer joins late.
 
-Follow these steps to get CAMS up and running for the first time.
+-   **Go Offline**
+    Disconnects the CAMS instance from the network sync to run in a standalone mode.
 
-    Launch the Application: Start the CAMS program on one or more computers.
+#### Admin Dashboard
+The control center for all CAMS settings and reports.
 
-    Network Connection: Ensure all computers running CAMS are connected to the same local network (e.g., the same Wi-Fi). The first instance of the program that starts will automatically become the "Server," and other instances will connect to it. You will see a "Running as Server" or "Connected as Client" status on the main screen.
+-   **Printer Settings Tab:** Configure your label printer, scan for devices, and print test pages.
+-   **Branding Tab:** Customize the welcome banner text and application logo.
+-   **Name Tag Editor Tab:** Customize the layout of printed name tags with a live preview.
+-   **Manual Reports Tab:** Generate and export attendance reports as Excel files for a specific date range.
+-   **Automated Reports Tab:** Schedule reports to be automatically generated and emailed daily, weekly, etc.
+-   **Email Settings Tab:** Configure an email account for sending reports.
+    > **Note:** For services like Gmail, you must use an **"App Password"** generated from your Google Account security settings, not your regular password.
+-   **Attendance Chart Tab:** Displays a graph of attendance over the last four Sundays for a quick visual overview.
 
-    - Connect a Printer:
+</details>
 
-        On the main screen, click the 🔴 Printer Connection button.
+---
 
-        A dialog will appear, scanning for available printers.
+## 🤝 Contributing
 
-        Select a printer from the list that shows an "Available" status.
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-        Once connected, the button on the main screen will turn green (🟢 Printer Connection).
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 
-    - Add Your Branding (Optional):
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
 
-        Click the Admin Dashboard button on the main screen.
+---
 
-        Go to the Branding tab.
+## 📜 License
 
-        Update the Welcome Banner Text and provide a path to your church's logo.
-
-        Click Save Branding Settings.
-
-    - Start Checking People In!
-
-        For returning attendees, use the Returnee Check-in option.
-
-        For new guests, use the New Attendee option to register them.
-
-**In-Depth Feature Guide**
-
-**Main Screen Functions**
-
-The main screen is your central hub for daily operations and accessing key settings.
-
-**- Returnee Check-In -**
-
-This is the primary screen for logging attendance for anyone who has attended before.
-
-    How to use:
-
-        Click the Returnee Check-in card from the home screen.
-
-        Use the search bar or the large on-screen virtual keyboard to start typing a person's name. The "All Members" list will filter as you type.
-
-        Alternatively, the top three matches will appear as large "Quick Select" buttons for faster access.
-
-        Select the correct name from the list and click the Check In Selected button, or simply click their Quick Select button.
-
-        A confirmation message will appear, their attendance will be logged, and a name tag will be printed automatically.
-
-    Signed-In List: The list on the right shows everyone who is currently checked in for the day. Attendance is logged for a 6-hour period.
-
-    Removing a Check-in: If you make a mistake, select the name from the "Currently Checked In" list on the right and click Remove Check-in.
-
-**- New Attendee -**
-
-This screen is for registering first-time visitors or new members.
-
-    How to use:
-
-        Click the New Attendee card from the home screen.
-
-        Enter the person's First Name and Last Name.
-
-        Assign them a Church Role from the dropdown list (e.g., "Visitor").
-
-        You have two options:
-
-            Register & Check In: This saves their profile, immediately logs their attendance for the day, and prints a name tag.
-
-            Register Only: This saves their profile in the system for future check-ins without logging their attendance for today.
-
-**- Edit Profile -**
-
-This screen allows you to modify information for any existing profile.
-
-    How to use:
-
-        Click the Edit Profile button in the top navigation bar.
-
-        Use the search bar to find the person you wish to edit.
-
-        Select their name from the list on the left.
-
-        Their profile details will appear in the form on the right.
-
-        Make any necessary changes to their name or role and click Save Changes. You can also delete their profile entirely by clicking Delete Profile.
-
-**- Printer Connection -**
-
-This button on the bottom of the home screen serves two purposes:
-
-    Status Indicator: Shows Green (🟢) if a printer is connected and Red (🔴) if it is not.
-
-    Shortcut: Clicking this button opens the printer selection dialog, allowing you to quickly connect to or switch printers.
-
-**- Connect / Re-Scan -**
-
-Click this button to force your CAMS instance to re-scan the network for other running instances. This is useful if you start another computer after the server is already running or if a connection was lost.
-
-**- Go Offline -**
-
-Click this button to disconnect your CAMS instance from the network sync. The program will run in a standalone mode, and any check-ins or changes made will only be saved locally on that machine until you reconnect.
-Admin Dashboard
-
-**The Admin Dashboard is the control center for configuring all CAMS settings and generating reports.**
-
-**- Printer Settings Tab -**
-
-This is where you configure your label printer.
-
-    Printing System: Choose between "Brother QL" (for direct connection) or "CUPS" (for Linux/macOS system printers).
-
-    Scan for Printers: Click this to detect compatible printers on your network or connected via USB.
-
-    Discovered Printers: Select a found printer from this dropdown list. Its details will auto-fill below.
-
-    Identifier: This is the specific address of the printer (e.g., usb://0x04f9:0x2042 or a network IP).
-
-    Label Size: Ensure this matches the label roll currently in your printer (e.g., 62x29).
-
-    Print Test Page: Click this to print a sample label to confirm the connection is working.
-
-    Save Printer Settings: Click to save your configuration.
-
-**- Branding Tab -**
-
-Customize the look and feel of the application.
-
-    Welcome Banner Text: The text displayed in the blue bar at the very top of the application.
-
-    Logo File Path: Click "Browse..." to select an image file (.png, .jpg, .svg) for your church's logo, which appears in the top navigation bar.
-
-    Logo Fallback Text: Text that will be displayed if the logo image cannot be found.
-
-**- Name Tag Editor Tab -**
-
-Customize the layout of the printed name tags.
-
-    Controls: On the left, you can adjust the position (X, Y), size (Width, Height), font, and style (Bold, Italic, Underline) for both the person's name and their role. You can also toggle whether to print the first name, last name, or role.
-
-    Live Preview: The white box on the right shows a live preview of how your name tag will look.
-
-    Save/Load: You can Save Layout or Load Defaults to revert to the original layout. It may require some testing to get the formatting printed exactly as desired.
-
-**- Manual Reports Tab -**
-
-Generate and export attendance reports.
-
-    Start/End Date: Select the date range for your report.
-
-    Email Recipients: If you plan to email the report, enter a comma-separated list of email addresses here.
-
-    Generate Report: Creates an Excel (.xlsx) file with the attendance data and saves it to a "reports" folder on your computer.
-
-    Generate & Email: Creates the same report and immediately emails it to the specified recipients (requires Email Settings to be configured).
-
-**- Automated Reports Tab -**
-
-Set up CAMS to automatically generate and email reports on a schedule.
-
-    Configuration: Set the frequency (Daily, Weekly, etc.), day of the week, and time for the report to be sent.
-
-    Recipients: Enter the email addresses of those who should receive the automated report.
-
-    Save: Click Save Automation Settings to activate the schedule.
-
-**- Email Settings Tab -**
-
-Configure an email account that CAMS will use to send reports.
-
-    Email Service: Select your provider (e.g., Gmail).
-
-    Email Address: The "From" email address.
-
-    Password / App Password: For services like Gmail, you must generate an "App Password" from your Google Account security settings. Your regular login password will not work.
-
-    Test Connection: Click this after filling out the form to ensure CAMS can successfully log in to the email server.
-
-**- Attendance Chart Tab -**
-
-This tab displays a simple line graph of your church's attendance over the last four Sundays, giving you a quick visual overview of recent trends.
+Distributed under the MIT License. See `LICENSE` for more information.
