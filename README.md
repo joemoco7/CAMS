@@ -195,54 +195,54 @@ Click the dropdown below for a complete guide on all of CAMS's features.
 #### Main Screen Functions
 The main screen is your central hub for daily operations.
 
-1.   **Returnee Check-In**
-<img src="Assets/Images/screenshot04.png" alt="Returnee Check-In" width="600"/>
-
-   This screen is for logging attendance for anyone previously registered.
+1.  **Returnee Check-In**
+    
+    *This screen is for logging attendance for anyone previously registered.*
+    
+    <img src="Assets/Images/screenshot04.png" alt="Returnee Check-In" width="600"/>
+    
     -   **How to use:** Start typing a name in the search bar. The list will filter, and the top results will appear as large Quick Select buttons. Click a name and confirm to check them in. An attendance record is created, and a name tag is printed.
     -   **Signed-In List:** The list on the right shows everyone currently checked in.
     -   **Removing a Check-in:** Select a name from the "Currently Checked In" list and click **Remove Check-in**.
 
-2.   **New Attendee**
-<img src="Assets/Images/screenshot06.png" alt="New Attendee" width="600"/>
+2.  **New Attendee**
 
-
-   Register first-time visitors or new members.
+    *Register first-time visitors or new members.*
+    
+    <img src="Assets/Images/screenshot06.png" alt="New Attendee" width="600"/>
+    
     -   **How to use:** Enter the person's first and last name and assign a role (e.g., "Visitor").
     -   **Register & Check In:** Saves their profile, logs attendance for today, and prints a name tag.
     -   **Register Only:** Saves their profile for the future without checking them in.
 
+3.  **Edit Profile**
+    
+    *Modify information for any existing profile via the top navigation bar.*
+    
+    <img src="Assets/Images/screenshot05.png" alt="Edit Profile" width="600"/>
 
-3.   **Edit Profile**
-<img src="Assets/Images/screenshot05.png" alt="Edit Profile" width="600"/>
+4.  **Printer Connection**
+    
+    *This button on the home screen shows connection status (🔴/🟢) and is a shortcut to the printer selection dialog.*
+    
+    <img src="Assets/Images/screenshot03.png" alt="Printer Connection" width="600"/>
 
+5.  **Connect / Re-Scan**
+    
+    *Forces CAMS to re-scan the network for other instances, which is useful if a connection was lost or another computer joins late.*
+    
+    <img src="Assets/Images/screenshot02.png" alt="Connect / Re-Scan" width="600"/>
 
-   Modify information for any existing profile via the top navigation bar.
+6.  **Go Offline**
+    
+    *Disconnects the CAMS instance from the network sync to run in a standalone mode.*
 
-
-4.   **Printer Connection**
-<img src="Assets/Images/screenshot03.png" alt="Printer Connection" width="600"/>
-
-
-   This button on the home screen shows connection status (🔴/🟢) and is a shortcut to the printer selection dialog.
-
-
-5.   **Connect / Re-Scan**
-<img src="Assets/Images/screenshot02.png" alt="Connect / Re-Scan" width="600"/>
-
-
-    Forces CAMS to re-scan the network for other instances, which is useful if a connection was lost or another computer joins late.
-
-
-6.   **Go Offline**
-    Disconnects the CAMS instance from the network sync to run in a standalone mode.
+---
 
 #### Admin Dashboard
 The control center for all CAMS settings and reports.
 
-
 <img src="Assets/Images/screenshot07.png" alt="Admin Dashboard" width="600"/>
-
 
 -   **Printer Settings Tab:** Configure your label printer, scan for devices, and print test pages.
 -   **Branding Tab:** Customize the welcome banner text and application logo.
@@ -254,7 +254,6 @@ The control center for all CAMS settings and reports.
 -   **Attendance Chart Tab:** Displays a graph of attendance over the last four Sundays for a quick visual overview.
 
 </details>
-
 ---
 
 ## 🤝 Contributing
