@@ -167,11 +167,6 @@ This method is useful for debugging or if you prefer the command line.
 
 ## 📚 User Guide
 
-Click the dropdown below for a complete guide on all of CAMS's features.
-
-<details>
-<summary><strong>Expand Full User Guide...</strong></summary>
-
 ### Quick Start Guide
 
 1.  **Launch the Application:** Start CAMS on one or more computers.
@@ -253,7 +248,6 @@ The control center for all CAMS settings and reports.
     > **Note:** For services like Gmail, you must use an **"App Password"** generated from your Google Account security settings, not your regular password.
 -   **Attendance Chart Tab:** Displays a graph of attendance over the last four Sundays for a quick visual overview.
 
-</details>
 ---
 
 ## 🤝 Contributing
