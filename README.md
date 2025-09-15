@@ -1,4 +1,4 @@
-![CAMS Logo](Assets/Images/CAMS-Logo.png)
+![CAMS](Assets/Images/CAMS-Logo-small.png)
 # CAMS
 **Church Attendance Management System**
 
