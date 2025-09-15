@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=CAMS
+Comment=Start Church_Attendance_Management_System
+Path=/home/acer/Church_Attendance_Management_System/
+Exec=gnome-terminal -- bash -c 'python3 CAMS_Launch.py; exec bash'
+Icon=/home/acer/.local/share/applications/CAMS-icon.png
+Terminal=false
+Categories=Utility;
