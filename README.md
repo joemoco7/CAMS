@@ -1,4 +1,4 @@
-<img src="Assets/Images/CAMS-logo.png" alt="CAMS" width="300"/>
+<img src="Assets/Images/CAMS-Logo.png" alt="CAMS" width="300"/>
 
 **Church Attendance Management System**
 
