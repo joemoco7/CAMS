@@ -75,8 +75,8 @@ Recommended Launch Method: Desktop Shortcuts
 
 **- For Linux Users (.desktop file) -**
 
-The "Start CABC-T CAMS.desktop" file is a standard Linux shortcut that will add CAMS to your system's application menu. You must edit this file before it will work.
-  Open the Shortcut File: Navigate to the CAMS project folder and open Start CABC-T CAMS.desktop in a text editor.
+The "Start CAMS.desktop" file is a standard Linux shortcut that will add CAMS to your system's application menu. You must edit this file before it will work.
+  Open the Shortcut File: Navigate to the CAMS project folder and open "Start CAMS.desktop" in a text editor.
 
   Update the Path: Find the line that starts with Path=. You must replace the example path (/home/acer/Church_Attendance_Management_System/) with the full, absolute path to the CAMS folder on your computer.
 
@@ -94,7 +94,7 @@ The "Start CABC-T CAMS.desktop" file is a standard Linux shortcut that will add 
 
   - You can use this when stating from inside the CAMS project folder
     
-        cp "Start CABC-T CAMS.desktop" ~/.local/share/applications/
+        cp "Start CAMS.desktop" ~/.local/share/applications/
 
       
 
@@ -104,11 +104,11 @@ After these steps, "CAMS" should appear in your application launcher (you may ne
 
 **- For Windows Users (.bat file) -**
 
-The Start CABC-T CAMS.bat file is designed to work without any modification.
+The "Start CAMS.bat" file is designed to work without any modification.
 
   Simply navigate to the CAMS folder in File Explorer.
 
-  Double-click the Start CABC-T CAMS.bat file.
+  Double-click the "Start CAMS.bat" file.
 
 A command prompt window will appear, and the CAMS application will launch. The window will remain open after you close the application; you can press any key to dismiss it. This is intentional, as it allows you to see any error messages if the program closes unexpectedly.
 
