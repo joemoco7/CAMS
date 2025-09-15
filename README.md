@@ -134,3 +134,192 @@ Run the launcher script directly:
   On Windows:
   
     python CAMS_Launch.py
+
+**Quick Start Guide**
+
+Follow these steps to get CAMS up and running for the first time.
+
+    Launch the Application: Start the CAMS program on one or more computers.
+
+    Network Connection: Ensure all computers running CAMS are connected to the same local network (e.g., the same Wi-Fi). The first instance of the program that starts will automatically become the "Server," and other instances will connect to it. You will see a "Running as Server" or "Connected as Client" status on the main screen.
+
+    - Connect a Printer:
+
+        On the main screen, click the 🔴 Printer Connection button.
+
+        A dialog will appear, scanning for available printers.
+
+        Select a printer from the list that shows an "Available" status.
+
+        Once connected, the button on the main screen will turn green (🟢 Printer Connection).
+
+    - Add Your Branding (Optional):
+
+        Click the Admin Dashboard button on the main screen.
+
+        Go to the Branding tab.
+
+        Update the Welcome Banner Text and provide a path to your church's logo.
+
+        Click Save Branding Settings.
+
+    - Start Checking People In!
+
+        For returning attendees, use the Returnee Check-in option.
+
+        For new guests, use the New Attendee option to register them.
+
+**In-Depth Feature Guide**
+
+**Main Screen Functions**
+
+The main screen is your central hub for daily operations and accessing key settings.
+
+**- Returnee Check-In -**
+
+This is the primary screen for logging attendance for anyone who has attended before.
+
+    How to use:
+
+        Click the Returnee Check-in card from the home screen.
+
+        Use the search bar or the large on-screen virtual keyboard to start typing a person's name. The "All Members" list will filter as you type.
+
+        Alternatively, the top three matches will appear as large "Quick Select" buttons for faster access.
+
+        Select the correct name from the list and click the Check In Selected button, or simply click their Quick Select button.
+
+        A confirmation message will appear, their attendance will be logged, and a name tag will be printed automatically.
+
+    Signed-In List: The list on the right shows everyone who is currently checked in for the day. Attendance is logged for a 6-hour period.
+
+    Removing a Check-in: If you make a mistake, select the name from the "Currently Checked In" list on the right and click Remove Check-in.
+
+**- New Attendee -**
+
+This screen is for registering first-time visitors or new members.
+
+    How to use:
+
+        Click the New Attendee card from the home screen.
+
+        Enter the person's First Name and Last Name.
+
+        Assign them a Church Role from the dropdown list (e.g., "Visitor").
+
+        You have two options:
+
+            Register & Check In: This saves their profile, immediately logs their attendance for the day, and prints a name tag.
+
+            Register Only: This saves their profile in the system for future check-ins without logging their attendance for today.
+
+**- Edit Profile -**
+
+This screen allows you to modify information for any existing profile.
+
+    How to use:
+
+        Click the Edit Profile button in the top navigation bar.
+
+        Use the search bar to find the person you wish to edit.
+
+        Select their name from the list on the left.
+
+        Their profile details will appear in the form on the right.
+
+        Make any necessary changes to their name or role and click Save Changes. You can also delete their profile entirely by clicking Delete Profile.
+
+**- Printer Connection -**
+
+This button on the bottom of the home screen serves two purposes:
+
+    Status Indicator: Shows Green (🟢) if a printer is connected and Red (🔴) if it is not.
+
+    Shortcut: Clicking this button opens the printer selection dialog, allowing you to quickly connect to or switch printers.
+
+**- Connect / Re-Scan -**
+
+Click this button to force your CAMS instance to re-scan the network for other running instances. This is useful if you start another computer after the server is already running or if a connection was lost.
+
+**- Go Offline -**
+
+Click this button to disconnect your CAMS instance from the network sync. The program will run in a standalone mode, and any check-ins or changes made will only be saved locally on that machine until you reconnect.
+Admin Dashboard
+
+**The Admin Dashboard is the control center for configuring all CAMS settings and generating reports.**
+
+**- Printer Settings Tab -**
+
+This is where you configure your label printer.
+
+    Printing System: Choose between "Brother QL" (for direct connection) or "CUPS" (for Linux/macOS system printers).
+
+    Scan for Printers: Click this to detect compatible printers on your network or connected via USB.
+
+    Discovered Printers: Select a found printer from this dropdown list. Its details will auto-fill below.
+
+    Identifier: This is the specific address of the printer (e.g., usb://0x04f9:0x2042 or a network IP).
+
+    Label Size: Ensure this matches the label roll currently in your printer (e.g., 62x29).
+
+    Print Test Page: Click this to print a sample label to confirm the connection is working.
+
+    Save Printer Settings: Click to save your configuration.
+
+**- Branding Tab -**
+
+Customize the look and feel of the application.
+
+    Welcome Banner Text: The text displayed in the blue bar at the very top of the application.
+
+    Logo File Path: Click "Browse..." to select an image file (.png, .jpg, .svg) for your church's logo, which appears in the top navigation bar.
+
+    Logo Fallback Text: Text that will be displayed if the logo image cannot be found.
+
+**- Name Tag Editor Tab -**
+
+Customize the layout of the printed name tags.
+
+    Controls: On the left, you can adjust the position (X, Y), size (Width, Height), font, and style (Bold, Italic, Underline) for both the person's name and their role. You can also toggle whether to print the first name, last name, or role.
+
+    Live Preview: The white box on the right shows a live preview of how your name tag will look.
+
+    Save/Load: You can Save Layout or Load Defaults to revert to the original layout. It may require some testing to get the formatting printed exactly as desired.
+
+**- Manual Reports Tab -**
+
+Generate and export attendance reports.
+
+    Start/End Date: Select the date range for your report.
+
+    Email Recipients: If you plan to email the report, enter a comma-separated list of email addresses here.
+
+    Generate Report: Creates an Excel (.xlsx) file with the attendance data and saves it to a "reports" folder on your computer.
+
+    Generate & Email: Creates the same report and immediately emails it to the specified recipients (requires Email Settings to be configured).
+
+**- Automated Reports Tab -**
+
+Set up CAMS to automatically generate and email reports on a schedule.
+
+    Configuration: Set the frequency (Daily, Weekly, etc.), day of the week, and time for the report to be sent.
+
+    Recipients: Enter the email addresses of those who should receive the automated report.
+
+    Save: Click Save Automation Settings to activate the schedule.
+
+**- Email Settings Tab -**
+
+Configure an email account that CAMS will use to send reports.
+
+    Email Service: Select your provider (e.g., Gmail).
+
+    Email Address: The "From" email address.
+
+    Password / App Password: For services like Gmail, you must generate an "App Password" from your Google Account security settings. Your regular login password will not work.
+
+    Test Connection: Click this after filling out the form to ensure CAMS can successfully log in to the email server.
+
+**- Attendance Chart Tab -**
+
+This tab displays a simple line graph of your church's attendance over the last four Sundays, giving you a quick visual overview of recent trends.
