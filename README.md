@@ -65,7 +65,7 @@ This script will check for system libraries, create a Python virtual environment
 
 Once the script finishes, your environment is ready.
 
-**Usage**
+**Running After Installation**
 
 After a successful installation, you can run the application using the provided shortcut files. This is the recommended method for daily use.
 Recommended Launch Method: Desktop Shortcuts
