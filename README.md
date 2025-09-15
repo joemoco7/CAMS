@@ -1,7 +1,9 @@
-# CAMS: Church Attendance Management System
+!(assets/images/CAMS-Logo.png)
+# CAMS: 
+**Church Attendance Management System**
 A user-friendly, free, and open-source tool to simplify attendance management and event check-ins for organizations like churches.
 
-![alt text](assets/images/screenshot.png)
+![Home Screen Screenshot](assets/images/screenshot01.png)
 
 **About The Project**
 
