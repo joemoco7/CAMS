@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=CAMS Server
+Comment=Start Church_Attendance_Management_System
+Path=/home/surface/CABC-T CAMS/
+Exec=gnome-terminal -- bash -c 'python3 CAMS_Launch_Server.py; exec bash'
+Icon=/home/surface/.local/share/applications/CAMS_Server_icon.png
+Terminal=true
+Categories=Utility;
